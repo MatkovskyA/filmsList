@@ -1,0 +1,45 @@
+.add__movies {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    gap: 4px;
+    overflow: auto;
+    border: none;
+}
+
+.movie__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+    align-items: center;
+    height: 71px;
+    background-color: #3A3939;
+    border-radius: 10px;
+}
+
+.label {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    letter-spacing: -0.4px;
+    color: rgb(228, 208, 247);
+}
+
+.label ::before {
+    content: '';
+    display: block;
+    min-width: 19px;
+    height: 19px;
+    border: 1px solid #F3F6F9;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-right: 10px;
+}
+
+.movie__cross_delete {
+    width: 25px;
+    background: url(../resourses/cross.png), center, contain no-repeat;
+}

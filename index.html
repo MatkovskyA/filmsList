@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/moviesList.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link rel="icon" href="resourses/icons8-хлопушка-для-кино.gif">
+    <title>Movie List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="block__title">
+            <p class="title__list back_color"> Список фильмов </p>
+            <p class="year__film back_color">2023 г.</p>
+        </div>
+        <div class="main__title">
+            <h1>ПОСМОТРЕТЬ</h1>
+        </div>
+        <div class="block__movie_list">
+            <div class="block__inner_text">
+                <input id="input-text" class="movie__input" type="text" placeholder="Добавить фильм">
+                <button id="button-arrow" class="image__arrow" type="button">
+                    <img src="resourses/Vector.png" alt="Кнопка вывода списка" class="button__arrow">
+                </button>
+            </div>
+            <div class="movies">
+                <ul id="add__movies-list" class="add__movies">
+                    <!-- <li id="movie__item" class="movie__item checked-movie-item">
+                        <input class="movie__checkbox checked-checkbox" type="checkbox">
+                        <label class="label">movie</label>
+                        <button class="movie__cross_delete" id="movie__cross_delete" type='button' alt="cross-delete">>
+                        </button>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
