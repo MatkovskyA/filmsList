@@ -1,34 +1,56 @@
 const inputMoviesNode = document.getElementById('input-text'); //данные инпута
 const movieBtnAdd = document.getElementById('button-arrow'); // кнопка
-const moviesListNode = document.getElementById('add__movies-list'); // список выводимых данных
-const deleteMovieNode = document.getElementById('movie__cross_delete'); // кнопка удаления списка
+const moviesListNode = document.getElementById('movies__lists'); // список выводимых данных
 
-const CHECKED_CLASS_NAME = 'checked-movie-item';
-const CHECKED_CHECKBOX = 'checked-checkbox';
 
-let movies = [];
-// получение данных и проверка инпута
-function getInputMovie() {
-    let userFilm = inputMoviesNode.value;
+//получаем данные из input + проверка
+function addMovie() {
     if (!inputMoviesNode.value.trim()) {
         alert("Введите корректное название фильма");
-    };
-    
-    return userFilm;
-}
-// чистка инпута
-const clearInput = () => {inputMoviesNode.value = ''};
-
-const showMovieTitle = () => {
-    getInputMovie();
-    addMovieToList();
-    clearInput();
-
+    }
+    if (inputMoviesNode.value.trim()) {
+        createMovieList();
+    }
+    if (inputMoviesNode.value.length > '100') {
+        alert('Слишком большое название фильма, ты не ошибся?');
+        
+    }
+    inputMoviesNode.value = '';
+    saveData();
 }
 
-function addMovieToList() {
-    moviesListNode.innerHTML = getInputMovie();
+// создаем список с иконкой закрытия
+function createMovieList() {
+    let movieList = document.createElement('li');
+    movieList.innerHTML = inputMoviesNode.value;
+    moviesListNode.appendChild(movieList);
+    let cross__delete = document.createElement('span');
+    cross__delete.innerHTML = '+';
+    movieList.appendChild(cross__delete);
 }
 
-
-movieBtnAdd.addEventListener('click', showMovieTitle)
+// 
+function checkedMovie(el) {
+    if (el.target.tagName === 'LI') {
+        el.target.classList.toggle('checked');
+        saveData()
+    }
+    if (el.target.tagName === "SPAN") {
+        el.target.parentElement.remove()
+        saveData()
+    }
+    return
+}
+// сохранение в  LS
+function saveData() {
+    localStorage.setItem('data', moviesListNode.innerHTML);
+}
+// Отображение сохраненных данных
+showMovie()
+function showMovie() {
+    moviesListNode.innerHTML = localStorage.getItem('data')
+}
+// Зачеркивание / удаление фильма через клик
+moviesListNode.addEventListener('click', checkedMovie)
+// добаление в список фильма 
+movieBtnAdd.addEventListener('click', addMovie)

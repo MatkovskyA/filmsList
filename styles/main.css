@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #1f1e1e;
+    background: linear-gradient(135deg, #282727, #bb8686)
 }
 
 .container {
@@ -52,6 +52,7 @@ h1 {
 }
 
 .block__movie_list {
+    margin-bottom: 180px;
     padding: 70px;
     background: #232323;
     border-radius: 20px;

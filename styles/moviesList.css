@@ -1,45 +1,54 @@
-.add__movies {
-    display: flex;
-    height: 500px;
-    flex-direction: column;
-    gap: 4px;
-    overflow: auto;
-    border: none;
-}
-
-.movie__item {
-    display: flex;
-    justify-content: space-between;
-    padding: 28px;
-    align-items: center;
-    height: 71px;
-    background-color: #3A3939;
+ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 20px 8px 20px 50px;
+    margin-bottom: 10px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background-color: #a7a2a2;
     border-radius: 10px;
+    font-size: 26px;
 }
 
-.label {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    letter-spacing: -0.4px;
-    color: rgb(228, 208, 247);
-}
-
-.label ::before {
+ul li::before {
     content: '';
-    display: block;
-    min-width: 19px;
-    height: 19px;
-    border: 1px solid #F3F6F9;
-    border-radius: 100px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-    margin-right: 10px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(/resourses/icons8-круг-64.png);
+    background-color: #fff;
+    border: 4px solid blueviolet;
+    background-size: cover;
+    left: 10px;
+    top: 20px;
 }
 
-.movie__cross_delete {
-    width: 25px;
-    background: url(../resourses/cross.png), center, contain no-repeat;
+ul li.checked {
+    color: #656565;
+    text-decoration: line-through;
 }
+
+ul li.checked::after {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 10px;
+    top: 20px;
+    border-radius: 50%;
+    background-image: url(/resourses/icons8-ок-100.png);
+    background-position: center;
+    background-size: cover;
+}
+
+ul li span {
+    top: 13px;
+    position: absolute;
+    right: 20px;
+    font-size: 40px;
+    transform: rotate(45deg);
+}
+
+
