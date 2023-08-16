@@ -1,0 +1,28 @@
+.header__inner {
+    display: flex;
+    gap: 20px;
+    padding-left: 70px;
+}
+
+.header__inner_items {
+    color: #F3F6F9;
+    font-family: Arimo;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 200px;
+    border: 1px solid #6532F8;
+    background: #6532F8;
+    ;
+}
+
+.header__title {
+    padding-left: 70px;
+    color: #F3F6F9;
+    font-family: Arimo;
+    font-size: 120.416px;
+    font-weight: 400;
+    letter-spacing: -4.817px;
+}

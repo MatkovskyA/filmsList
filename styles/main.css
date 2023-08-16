@@ -1,90 +1,18 @@
+@import url(footer.css);
+@import url(moviesList.css);
+@import url(header.css);
+
 html {
     font-family: 'Arimo', sans-serif;
 }
 
 body {
-    background-color: #3b3131;
+    background: #181818;
 }
 
 .container {
-    max-width: 1150px;
+    box-sizing: border-box;
     margin: 0 auto;
-    display: block;
+    min-width: 930px;
+    padding: 80px 150px;
 }
-
-p, h1, h2, h3 {
-    color: rgb(228, 208, 247);
-}
-
-.block__title {
-    display: flex;
-    margin-top: 80px;
-    margin-bottom: 20px;
-    padding-left: 70px;
-}
-
-.title__list {
-    width: 200px;
-    margin-right: 15px;
-}
-
-.year__film {
-    width: 80px;
-}
-
-.back_color {
-    text-align: center;
-    padding: 10px;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.6px;
-    text-transform: uppercase;
-    background-color: rgb(150, 51, 243);
-    border-radius: 20px;
-}
-
-h1 {
-    font-size: 120px;
-    margin-bottom: 45px;
-    padding-left: 70px;
-}
-
-.block__movie_list {
-    margin-bottom: 180px;
-    padding: 70px;
-    background: #232323;
-    border-radius: 20px;
-}
-
-.movie__input {
-    width: 410px;
-    font-size: 30px;
-    padding: 15px;
-    margin-right: 20px;
-    color: rgb(228, 208, 247);
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #515151;
-    text-decoration: none;
-    background: #232323;
-}
-
-.block__inner_text {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.image__arrow {
-    width: 62px;
-    height: 62px;
-    padding: 15px;
-    background-color: rgb(150, 51, 243);
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-
-
