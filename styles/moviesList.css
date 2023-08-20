@@ -1,23 +1,37 @@
-/* ul li {
+.movies__list {
+    max-height: 400px;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+ul li {
+    box-sizing: border-box;
     list-style: none;
     font-size: 18px;
-    padding: 20px 8px 20px 50px;
+    padding: 20px;
     margin-bottom: 10px;
     user-select: none;
     cursor: pointer;
-    position: relative;
     background-color: #a7a2a2;
     border-radius: 10px;
     font-size: 26px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
 }
 
-ul li::before {
-    content: '';
-    position: absolute;
+.li_bg_color {
+    background-color: #232323;
+
+}
+
+.movie__btn_checked {
+
     height: 30px;
     width: 30px;
     border-radius: 50%;
     background-image: url(../resourses/icons8-круг-64.png);
+    background-position: center;
     background-color: #fff;
     border: 4px solid blueviolet;
     background-size: cover;
@@ -25,30 +39,39 @@ ul li::before {
     top: 20px;
 }
 
-ul li.checked {
+/* 
+.movie__btn_check {
     color: #656565;
     text-decoration: line-through;
 }
+*/
+.movie__btn_check {
+    background-color: #55f05d;
+}
 
-ul li.checked::after {
-    content: '';
+.movie__btn_delete {
     position: absolute;
     height: 30px;
     width: 30px;
-    left: 10px;
-    top: 20px;
-    border-radius: 50%;
-    background-image: url(../resourses/icons8-ок-100.png);
+    background-image: url(../resourses/icons8-умножение-48.png);
     background-position: center;
     background-size: cover;
+    right: 25px;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-ul li span {
-    top: 13px;
+/* снимаем события с картинки переводя их на кнопку*/
+.movie__list_btn img {
+    pointer-events: none;
+}
+
+.movie__title {
     position: absolute;
-    right: 20px;
-    font-size: 40px;
-    transform: rotate(45deg);
+    left: 75px;
 }
 
- */
+.movie__title_mark {
+    text-decoration: line-through;
+    color: #656565;
+}

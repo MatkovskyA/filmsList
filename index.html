@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
@@ -20,34 +20,29 @@
                 <p class="header__inner_items items_title">Список фильмов</p>
                 <p class="header__inner_items film_year">2023</p>
             </div>
-            <h1 class="header__title">Посмотреть</h1>
+            <div class="header__title">Посмотреть</div>
         </div>
     </header>
-    <!-- <div class="container">
-        <div class="block__title">
-            <p class="title__list back_color"> Список фильмов </p>
-            <p class="year__film back_color">2023 г.</p>
-        </div>
-        <div class="main__title">
-            <h1>ПОСМОТРЕТЬ</h1>
-        </div>
-        <div class="block__movie_list">
-            <div class="block__inner_text">
-                <input id="input-text" class="movie__input" type="text" placeholder="Добавить фильм">
-                <button id="button-arrow" class="image__arrow" type="button">
+    <main>
+        <div class="container">
+            <form id="form" class="movies">
+                <input class="movies__input" id="input" placeholder="Добавьте фильм">
+                <button id="button__add" class="movies__button" type="submit">
                     <img src="resourses/Vector.png" alt="Кнопка вывода списка" class="button__arrow">
                 </button>
-            </div>
-            <div class="movies">
-                <ul id="movies__lists" class="add__movies">
-                    <li class="checked">movie 1</li>
-                    <li>movie 2</li>
-                    <li>movie 3</li> 
-                    </li>
+            </form>
+            <div class="movies__list">
+                <ul id="movies__list_item" class="movies__list_item">
+                    <!-- <li id="movies__list_empty" class="movies__list_empty">
+                        <button type="button" data-action ="checked" class="movie__btn_checked"></button>
+                        <span data-action ="mark" class="movie__title">Название фильма</span>
+                        <button type="button" data-action ="delete" class="movie__btn_delete cross"></button>
+                    </li> -->
                 </ul>
             </div>
         </div>
-    </div>
+    </main>
+    <!--
     <footer>
         <div class="footer">
             <div class="footer__inner container">

@@ -1,18 +1,34 @@
-@import url(footer.css);
-@import url(moviesList.css);
-@import url(header.css);
-
-html {
-    font-family: 'Arimo', sans-serif;
+.movies {
+    display: flex;
+    border-radius: 20px;
+    background: #232323;
+    margin-top: 45px;
+    padding: 80px 70px;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 body {
     background: #181818;
 }
 
-.container {
-    box-sizing: border-box;
-    margin: 0 auto;
-    min-width: 930px;
-    padding: 80px 150px;
+.movies__button {
+    background: #6532F8;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.movies__input {
+    width: 411;
+    border-bottom: 1px solid #F3F6F9;
+    color: #F3F6F9;
+    font-family: Arimo;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    padding: 15px 25px;
+    outline: none;
+    background: transparent;
 }

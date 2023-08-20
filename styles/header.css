@@ -2,6 +2,7 @@
     display: flex;
     gap: 20px;
     padding-left: 70px;
+    padding-top: 80px;
 }
 
 .header__inner_items {
@@ -15,7 +16,7 @@
     border-radius: 200px;
     border: 1px solid #6532F8;
     background: #6532F8;
-    ;
+
 }
 
 .header__title {
