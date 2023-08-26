@@ -32,3 +32,12 @@ body {
     outline: none;
     background: transparent;
 }
+
+a {
+    text-decoration: none;
+    color: rgb(241, 247, 220);
+    font-size: 30px;
+    padding: 10px;
+    border: 2px solid rgb(241, 247, 220);
+    border-radius: 10px;
+}

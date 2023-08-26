@@ -1,0 +1,16 @@
+h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.footer__title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+.contacs {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}

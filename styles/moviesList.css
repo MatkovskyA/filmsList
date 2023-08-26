@@ -2,6 +2,7 @@
     max-height: 400px;
     overflow: auto;
     scroll-behavior: smooth;
+    padding-bottom: 50px;
 }
 
 ul li {
