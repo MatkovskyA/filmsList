@@ -10,12 +10,13 @@ html {
 
 body {
     background: #181818;
+
 }
 
 .container {
     box-sizing: border-box;
     margin: 0 auto;
-    min-width: 930px;
+    width: 930px;
     padding-left: 150px;
     padding-right: 150px;
 }

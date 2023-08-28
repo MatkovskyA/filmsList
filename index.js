@@ -7,8 +7,6 @@ const movieAddBtn = document.getElementById('button__add');
 // список выводимых данных
 const moviesList = document.querySelector('.movies__list_item'); 
 
-
-
 let movieArr = []
 // получаем данные из LS если они там есть
 if (localStorage.getItem('movieArr')) {
@@ -19,9 +17,6 @@ if (localStorage.getItem('movieArr')) {
 movieArr.forEach(function (newMovie)  {
     renderMovieList(newMovie)
 });
-
-
-
 
 // отображаем список фильмов 
 function getMovie() {
@@ -120,8 +115,6 @@ function markMovie(e) {
 function saveToLocalStorage() {
     localStorage.setItem('movieArr', JSON.stringify(movieArr))
 }
-
-
 
 
 // обработчик для вывода фильма
