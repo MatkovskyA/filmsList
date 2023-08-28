@@ -34,7 +34,7 @@ function getMovie() {
         }
         
     // отмена отправки формы
-    e.preventDefault();
+    // e.preventDefault();
 
     //получаем новый фильм как объект с id и названием
     const newMovie = {
