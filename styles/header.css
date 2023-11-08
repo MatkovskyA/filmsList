@@ -1,7 +1,6 @@
 .header__inner {
     display: flex;
     gap: 20px;
-    padding-left: 70px;
     padding-top: 80px;
 }
 
@@ -20,7 +19,6 @@
 }
 
 .header__title {
-    padding-left: 70px;
     color: #F3F6F9;
     font-family: Arimo;
     font-size: 120.416px;
