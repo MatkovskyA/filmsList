@@ -1,7 +1,7 @@
 .header__inner {
     display: flex;
     gap: 20px;
-    padding-top: 80px;
+    padding: 80px 0 30px;
 }
 
 .header__inner_items {
@@ -18,10 +18,9 @@
 
 }
 
-.header__title {
+h1 {
     color: #F3F6F9;
-    font-family: Arimo;
-    font-size: 120.416px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 68px;
     font-weight: 400;
-    letter-spacing: -4.817px;
 }

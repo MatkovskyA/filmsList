@@ -1,3 +1,19 @@
+html {
+    font-family: 'Arimo', sans-serif;
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 930px;
+    padding: 20px 45px;
+}
+
+body {
+    background: #181818;
+}
+
+
 .movies {
     display: flex;
     border-radius: 20px;
@@ -6,10 +22,7 @@
     padding: 80px 70px;
     align-items: center;
     margin-bottom: 30px;
-}
-
-body {
-    background: #181818;
+    justify-content: space-between;
 }
 
 .movies__button {
@@ -21,7 +34,7 @@ body {
 }
 
 .movies__input {
-    width: 411;
+    width: 100%;
     border-bottom: 1px solid #F3F6F9;
     color: #F3F6F9;
     font-family: Arimo;

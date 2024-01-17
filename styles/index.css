@@ -2,21 +2,4 @@
 @import url(main.css);
 @import url(footer.css);
 @import url(moviesList.css);
-
-
-html {
-    font-family: 'Arimo', sans-serif;
-}
-
-body {
-    background: #181818;
-
-}
-
-.container {
-    box-sizing: border-box;
-    margin: 0 auto;
-    width: 930px;
-    padding-left: 150px;
-    padding-right: 150px;
-}
+@import url(media.css);

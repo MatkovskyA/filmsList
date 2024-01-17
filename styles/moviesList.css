@@ -40,12 +40,6 @@ ul li {
     top: 20px;
 }
 
-/* 
-.movie__btn_check {
-    color: #656565;
-    text-decoration: line-through;
-}
-*/
 .movie__btn_check {
     background-color: #55f05d;
 }
